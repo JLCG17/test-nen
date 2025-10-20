@@ -1,0 +1,11 @@
+div#test-nen-pregunta {
+    display: none;
+}
+
+div#test-nen-pregunta form {
+    display: flex;
+    flex-direction: column;
+}
+output#test-nen-resultado {
+    white-space: pre-wrap;
+}

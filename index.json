@@ -1,0 +1,782 @@
+{
+    "img": {
+        "introducción": "img/Nen_Types_Diagram.svg",
+        "manipulador": "img/Manipulator_Diagram.svg",
+        "emisor": "img/Emitter_Diagram.svg",
+        "potenciador": "img/Enhancer_Diagram.svg",
+        "transmutador": "img/Transmuter_Diagram.svg",
+        "materializador": "img/Conjurer_Diagram.svg",
+        "especialista": "img/Specialist_Diagram.svg"
+    },
+    "patrones": {
+        "manipulador": {
+            "manipulador": 1,
+            "emisor": 0.8,
+            "potenciador": 0.6,
+            "transmutador": 0.4,
+            "materializador": 0.6,
+            "especialista": 0.01
+        },
+        "emisor": {
+            "manipulador": 0.8,
+            "emisor": 1,
+            "potenciador": 0.8,
+            "transmutador": 0.6,
+            "materializador": 0.4,
+            "especialista": 0
+        },
+        "potenciador": {
+            "manipulador": 0.6,
+            "emisor": 0.8,
+            "potenciador": 1,
+            "transmutador": 0.8,
+            "materializador": 0.6,
+            "especialista": 0
+        },
+        "transmutador": {
+            "manipulador": 0.4,
+            "emisor": 0.6,
+            "potenciador": 0.8,
+            "transmutador": 1,
+            "materializador": 0.8,
+            "especialista": 0
+        },
+        "materializador": {
+            "manipulador": 0.6,
+            "emisor": 0.4,
+            "potenciador": 0.6,
+            "transmutador": 0.8,
+            "materializador": 1,
+            "especialista": 0.01
+        },
+        "especialista": {
+            "manipulador": 0.8,
+            "emisor": 0.6,
+            "potenciador": 0.4,
+            "transmutador": 0.6,
+            "materializador": 0.8,
+            "especialista": 1
+        }
+    },
+    "preguntas": [
+        {
+            "pregunta": "¿Cómo te dicen los demás?",
+            "opciones": [
+                {
+                    "opcion": "Egoísta.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Nervios@.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Carismátic@.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Mentiros@.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Lógic@.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Impaciente.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Cómo estudiás o trabajás?",
+            "opciones": [
+                {
+                    "opcion": "Cumplo la meta en uno o pocos pasos.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Analizo, planifico.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Lo hago sol@.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Si no me interesa, que lo hagan los demás.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Apuro o freno el ritmo de todos al mío.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Descuido los detalles.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Qué te importa más?",
+            "opciones": [
+                {
+                    "opcion": "Cumplir mi sueño.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Mantener todo ordenado.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Sé qué es, pero no está entre las demás opciones.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Disfrutar mi pasatiempo preferido.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Mi familia.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Cumplir mi trabajo.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Cuál color te identifica más?",
+            "opciones": [
+                {
+                    "opcion": "Amarillo.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Azul.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Negro.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Rosa.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Púrpura.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Rojo.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Cuál es un defecto que te persigue toda tu vida?",
+            "opciones": [
+                {
+                    "opcion": "Me cuesta todo lo intelectual: arte conceptual, filosofía, física, informática, lingüística, lógica, matemática.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Reacciono demasiado.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Todas mis relaciones son superficiales.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "No perdono.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Lastimo a mis seres queridos.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Meto la pata.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Cuál superpoder te parece que tienes?",
+            "opciones": [
+                {
+                    "opcion": "Superfuerza, superpercepción o supervelocidad.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Aura, exorcismo o magia.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Hablar con muertos, precognición o telepatía.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Transformación.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Telequinesis.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Teletransportación.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿A qué jugarías?",
+            "opciones": [
+                {
+                    "opcion": "Deporte.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Juego colaborativo.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "A lo que yo invente en el momento.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Juego de cartas.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Ajedrez.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Juego competitivo.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿De qué enfermás con más facilidad? (Si sos jubilado, ¿de qué lo hacías cuando eras más joven?)",
+            "opciones": [
+                {
+                    "opcion": "Nunca me enfermo o siempre es leve.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "De la digestión.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "De todo.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "De enfermedades respiratorias.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Del cuerpo estoy bien, pero dicen que estoy mal de la cabeza.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "De la presión o el ritmo cardíaco.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Qué te diagnosticaría un psiquiatra?",
+            "opciones": [
+                {
+                    "opcion": "No lo sé.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Trastorno Obsesivo Compulsivo.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Esquizofrenia o trastorno esquizoide.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Trastorno histriónico o trastorno paranoide.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Trastorno antisocial.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Trastorno de Déficit de Atención (con o sin Hiperactividad) o Trastorno Límite de la Personalidad.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        },
+        {
+            "pregunta": "¿Cómo descansarías mejor?",
+            "opciones": [
+                {
+                    "opcion": "Naturaleza.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.08,
+                        "potenciador": 0.1,
+                        "transmutador": 0.08,
+                        "materializador": 0.06,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "Noche silenciosa bien acompañad@.",
+                    "puntaje": {
+                        "manipulador": 0.06,
+                        "emisor": 0.04,
+                        "potenciador": 0.06,
+                        "transmutador": 0.08,
+                        "materializador": 0.1,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Sol@.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.06,
+                        "potenciador": 0.04,
+                        "transmutador": 0.06,
+                        "materializador": 0.08,
+                        "especialista": 0.1
+                    }
+                },
+                {
+                    "opcion": "Spa de estadía libre.",
+                    "puntaje": {
+                        "manipulador": 0.04,
+                        "emisor": 0.06,
+                        "potenciador": 0.08,
+                        "transmutador": 0.1,
+                        "materializador": 0.08,
+                        "especialista": 0
+                    }
+                },
+                {
+                    "opcion": "En familia.",
+                    "puntaje": {
+                        "manipulador": 0.1,
+                        "emisor": 0.08,
+                        "potenciador": 0.06,
+                        "transmutador": 0.04,
+                        "materializador": 0.06,
+                        "especialista": 0.001
+                    }
+                },
+                {
+                    "opcion": "Meditación, videojuegos de mundo abierto, música relajante, sin celular ni redes sociales.",
+                    "puntaje": {
+                        "manipulador": 0.08,
+                        "emisor": 0.1,
+                        "potenciador": 0.08,
+                        "transmutador": 0.06,
+                        "materializador": 0.04,
+                        "especialista": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "resultados": {
+        "defecto": "El test falla en clasificar estas respuestas.",
+        "manipulador": "Manipulador.",
+        "emisor": "Emisor.",
+        "potenciador": "Potenciador.",
+        "transmutador": "Transmutador.",
+        "materializador": "Materializador.",
+        "especialista": "Especialista."
+    }
+}

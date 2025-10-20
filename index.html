@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Luis Caballero Gallar">
+    <meta name="date" content="2025-10-19">
+    <title>Test Nen</title>
+    <link rel="shortcut icon" href="img/Nen_Types_Diagram.svg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Test Nen</h1>
+    <img id="test-nen-imagen" src="img/Nen_Types_Diagram.svg" alt="Hexágono de categorías nen.">
+    <button id="test-nen-comenzar" type="button" onclick="test.comenzar();">Comenzar</button>
+    <output id="test-nen-resultado"></output>
+    <div id="test-nen-pregunta">
+        <h2>Pregunta</h2>
+        <form onsubmit="test.siguiente(event);">
+            <label><input type="radio" name="respuesta" value="0" required><span>Opción 1</span></label>
+            <label><input type="radio" name="respuesta" value="1"><span>Opción 2</span></label>
+            <label><input type="radio" name="respuesta" value="2"><span>Opción 3</span></label>
+            <label><input type="radio" name="respuesta" value="3"><span>Opción 4</span></label>
+            <label><input type="radio" name="respuesta" value="4"><span>Opción 5</span></label>
+            <label><input type="radio" name="respuesta" value="5"><span>Opción 6</span></label>
+            <button type="submit">Siguiente</button>
+        </form>
+    </div>
+</body>
+
+</html>
